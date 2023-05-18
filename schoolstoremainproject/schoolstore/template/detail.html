@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<body>
+
+    {% for messages in messages %}
+    {{messages}}
+    {% endfor %}
+     <br><p class="text-center">Home page : <a href="/">HOME PAGE</a></p>
+
+   <center> <a href="logout" class="btn btn-primary" onclick="return confirm('Are you sure to logout?');">Log Out</a></center>
+
+
+</body>
+{% endblock %}
